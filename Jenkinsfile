@@ -1,10 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('build docker image') {
             steps {
-                sh 'echo hello'
+                sh 'echo Building Docker image'
             }
+        }
+        stage('Run docker Container') {
+            steps {
+		sh 'echo running docker container' 
+              }
         }
         stage('test') {
             steps {
