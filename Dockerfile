@@ -10,6 +10,8 @@ WORKDIR /app
 # install the dependencies and packages in the requirements file
 RUN pip install -r requirements.txt
 
+EXPOSE 5000
+
 # copy every content from the local file to the image
 COPY . /app
 

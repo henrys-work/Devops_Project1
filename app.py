@@ -11,11 +11,11 @@ app = Flask(__name__)
 # the associated function.
 @app.route('/')
 def hello_world():
-    return 'Hello World!\n'
+    return 'Hello World and Henry!\n'
  
 # main driver function
 if __name__ == '__main__':
  
     # run() method of Flask class runs the application
     # on the local development server.
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0',debug=True)
