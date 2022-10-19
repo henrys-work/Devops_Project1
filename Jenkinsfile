@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build docker image') {
       steps {
-        sh 'echo Building Docker image'
+        sh 'docker build -t devops_project_docker_image .'
       }
     }
     stage('Run docker Container') {
