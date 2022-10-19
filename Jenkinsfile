@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Run docker Container') {
       steps {
-        sh 'echo running docker container'
+        sh 'docker run  -p 5000:5000 devops_project_docker_image'
       }
     }
     stage('test') {
